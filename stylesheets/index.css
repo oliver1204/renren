@@ -1,0 +1,138 @@
+/* line 1, ../sass/index.scss */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../sass/index.scss */
+*::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/index.scss */
+a {
+  text-decoration: none;
+  color: #1faffb;
+}
+/* line 16, ../sass/index.scss */
+a:hover {
+  color: #1faffb;
+}
+/* line 19, ../sass/index.scss */
+a:active {
+  color: #1faffb;
+}
+
+/* line 23, ../sass/index.scss */
+ol, ul, li {
+  list-style: none;
+  list-style-type: none;
+}
+
+/* line 28, ../sass/index.scss */
+body {
+  color: #3c3c3c;
+  font-size: 14px;
+  font-family: DFKai-SB,microsoft yahei,tahoma,arial,\5b8b\4f53,sans-serif;
+  line-height: 1.428;
+}
+
+/* line 36, ../sass/index.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 41, ../sass/index.scss */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+/* line 47, ../sass/index.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 50, ../sass/index.scss */
+.float-right {
+  float: right;
+}
+
+/* line 53, ../sass/index.scss */
+.float-left {
+  float: left;
+}
+
+/* line 81, ../sass/index.scss */
+.container {
+  width: 960px;
+  margin: 30px auto;
+}
+/* line 84, ../sass/index.scss */
+.container .main {
+  width: 960px;
+  margin: 30px auto;
+}
+/* line 88, ../sass/index.scss */
+.container #left, .container #center, .container #right {
+  width: 300px;
+  margin: 0 10px;
+  float: left;
+}
+/* line 92, ../sass/index.scss */
+.container #left p, .container #center p, .container #right p {
+  text-align: center;
+}
+/* line 96, ../sass/index.scss */
+.container #left {
+  border: 1px solid #eee;
+}
+/* line 98, ../sass/index.scss */
+.container #left ul {
+  width: 96%;
+  margin: 30px auto;
+}
+/* line 101, ../sass/index.scss */
+.container #left ul li {
+  width: 33.33333333%;
+  height: 100px;
+  text-align: center;
+  border: 1px solid #eee;
+  float: left;
+}
+/* line 107, ../sass/index.scss */
+.container #left ul li .things {
+  width: 100%;
+  height: 36px;
+  background: url(../img/cola.png) no-repeat -6px 3px;
+}
+/* line 114, ../sass/index.scss */
+.container #left ul .active .things {
+  background-position: -101px 3px;
+}
+/* line 120, ../sass/index.scss */
+.container #center {
+  text-align: center;
+  border: 1px solid #eee;
+}
+/* line 123, ../sass/index.scss */
+.container #center h3 {
+  margin: 30px 0;
+}
+/* line 127, ../sass/index.scss */
+.container #right {
+  text-align: center;
+  border: 1px solid #eee;
+}
+/* line 130, ../sass/index.scss */
+.container #right #out {
+  width: 100%;
+  padding-top: 30px;
+}

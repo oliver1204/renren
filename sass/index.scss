@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+*::after,*::before{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+a{
+	text-decoration: none;
+	color: #1faffb;
+	&:hover{
+		color: #1faffb;
+	}
+	&:active{
+		color: #1faffb;
+	}
+}
+ol,ul,li{
+	list-style: none;
+	list-style-type: none;
+}
+body
+{
+	color:#3c3c3c;
+	font-size: 14px;
+	font-family: DFKai-SB,microsoft yahei,tahoma,arial,\5b8b\4f53,sans-serif;
+	line-height: 1.428;
+}
+
+.clearfix
+{
+    *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after 
+{
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.clearfix:after 
+{
+    clear: both;
+}
+.float-right{
+	float: right;
+}
+.float-left{
+	float: left;
+}
+
+@mixin anim($name,$time1,$linear,$time2,$numb,$yesorno){
+	animation: $name $time1 $linear $time2 $numb $yesorno;
+	-webkit-animation: $name $time1 $linear $time2 $numb $yesorno;
+	-moz-animation: $name $time1 $linear $time2 $numb $yesorno;
+	-o-animation: $name $time1 $linear $time2 $numb $yesorno;
+}
+@mixin transform-origin-y($num){
+	transform-origin-y: $num;
+	-webkit-transform-origin-y: $num;
+	-moz-transform-origin-y: $num;
+	-o-transform-origin-y: $num;
+	-ms-transform-origin-y: $num;
+}
+
+@mixin blur($num){
+	-webkit-filter: blur($num);
+	-moz-filter: blur($num);
+	-ms-filter: blur($num);
+	filter: blur($num);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=$num, MakeShadow=false);
+}
+
+@import "compass/css3";
+
+.container{
+	width: 960px;
+	margin: 30px auto;
+	.main{
+		width: 960px;
+		margin: 30px auto;
+	}
+	#left,#center,#right{
+		width: 300px;
+		margin: 0 10px;
+		float: left;
+		p{
+			text-align: center;
+		}
+	}
+	#left{
+		border: 1px solid #eee;
+		ul{
+			width: 96%;
+			margin: 30px auto;
+			li{
+				width: 33.33333333%;
+				height: 100px;
+				text-align: center;
+				border: 1px solid #eee;
+				float: left;
+				.things{
+					width: 100%;
+					height: 36px;
+					background: url(../img/cola.png) no-repeat -6px 3px;
+				}
+			}
+			.active{
+				.things{
+					background-position: -101px 3px;	
+				}
+			}
+		}
+	}
+	#center{
+		text-align: center;
+		border: 1px solid #eee;
+		h3{
+			margin: 30px 0;
+		}
+	}
+	#right{
+		text-align: center;
+		border: 1px solid #eee;
+		#out{
+			width: 100%;
+			padding-top: 30px;
+		}
+	}
+}
+
